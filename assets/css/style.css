@@ -125,4 +125,12 @@ header .header nav .menuText {
     font-size: var(--fz70);
     color: var(--white);
     margin-top: -20px;
+    margin-bottom: 45px;
+}
+.banner .bannerBlock .btn {
+    display: inline-block;
+    padding: 10px 32px;
+    background-color: var(--blue2);
+    border-radius: 10px;
+    color: var(--white);
 }
