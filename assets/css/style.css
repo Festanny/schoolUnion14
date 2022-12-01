@@ -114,6 +114,9 @@ header .header nav .menuText .topmenu > .submenu {
     top: 0;
     transform: translateY(100%);
 }
+header .header nav .menuText .topmenu:hover > a > .submenu {
+    opacity: .8;
+}
 header .header nav .menuText .topmenu:hover > .submenu {
     max-height: 100px;
 }
