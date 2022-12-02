@@ -1,0 +1,154 @@
+@media screen and (min-width: 1921px) {
+    :root {
+        --fz140: 7.29vw;
+        --fz80: 4.16vw;
+        --fz70: 3.64vw;
+        --fz30: 1.56vw;
+        --fz19: 0.99vw;
+        --fz16: 0.83vw;
+        --fz14: 0.73vw;
+    }
+    section:not(.banner) {
+        padding: 5.21vw 0;
+    }
+    input,
+    textarea {
+        border: 0.05vw solid transparent
+    }
+    .container {
+        width: 66.63vw;
+    }
+    .btn {
+        padding: 0.52vw 1.67vw;
+        border-radius: 0.52vw;
+        border: 0.05vw solid var(--blue);
+    }
+    .btnTrp {
+        border: 0.05vw solid var(--text);
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10000;
+        color: var(--white)
+    }
+    header .header {
+        padding: 1.35vw 0;
+    }
+    header .submenu {
+        padding-top: 1.25vw;
+        left: -0.78vw;
+        max-width: 12.49vw;
+        -webkit-box-shadow: 0px 0.78vw 0.42vw -0.78vw rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 0.78vw 0.42vw -0.78vw rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 0.78vw 0.42vw -0.78vw rgba(34, 60, 80, 0.2);
+    }
+    header .submenu li {position: relative;}
+    header .submenu a {
+        padding: 0.52vw 1.04vw;
+    }
+    header .submenu .submenu {
+        left: calc(100% - 0.05vw);
+        left: -webkit-calc(100% - 0.05vw);
+        padding-left: 0.52vw;
+    }
+    header nav li > .submenu li:first-of-type a {
+        padding-top: 1.20vw;
+    }
+    header nav li > .submenu li:last-of-type a {
+        padding-bottom: 1.20vw;
+    }
+    header .header nav,
+    footer .footer nav {
+        grid-template-columns: 1fr 5.93vw 1fr;
+        gap: 2.34vw;
+    }
+
+
+
+    header .header nav .menuText,
+    footer .footer nav .menuText {
+        gap: 1.30vw;
+    }
+    .banner {
+        min-height: 26.03vw;
+    }
+    .banner .bannerBlock {
+        padding: 5.21vw 0;
+        margin-top: 5.21vw;
+    }
+    .banner .bannerBlock .textSchool {
+        margin-bottom: 0.78vw;
+    }
+    .banner .bannerBlock .title {
+        letter-spacing: -0.16vw;
+    }
+    .banner .bannerBlock .desc {
+        margin-top: -1.04vw;
+        margin-bottom: 2.34vw;
+    }
+    .news .newsBlock .info-block {
+        gap: 4.42vw;
+    }
+    .news .newsBlock .info-block .item.textBlock {
+        gap: 2.34vw;
+    }
+    .news .newsBlock .info-block .item.textBlock .btnBlock {
+        gap: 1.56vw;
+        margin-top: 2.08vw;
+    }
+    .news .newsBlock .blockMore {
+        gap: 5.21vw;
+    }
+    .gallery .galleryBlock .info-block {
+        grid-gap: 0.78vw;
+        grid-auto-rows: 14.89vw;
+    }
+    .gallery .galleryBlock .info-block .item {
+        border-radius: 0.78vw;
+    }
+    .infoText .infoTextBlock .info-block {
+        gap: 5.21vw;
+    }
+    .infoText .infoTextBlock .info-block .item {
+        gap: 1.56vw;
+    }
+    .tableSection .tableBlock table tbody tr {
+        gap: 0.52vw;
+    }
+    .tableSection .tableBlock table tbody td {
+        border: 0.05vw solid var(--text);
+        padding: 2.92vw;
+    }
+    .tableSection .tableBlock table tbody tr:first-of-type td {
+        border-radius: 0.78vw 0.78vw 0 0;
+    }
+    .tableSection .tableBlock table tbody tr:last-of-type td {
+        border-radius: 0 0 0.78vw 0.78vw;
+    }
+    .tableSection .tableBlock table tbody {
+        gap: 0.52vw;
+    }
+    footer {
+        padding-top: 5.21vw;
+    }
+    footer .footer {
+        padding: 5.21vw 0;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .container {
+        width: 1000px;
+    }
+    header .header nav .burger {
+        display: flex;
+    }
+    header .header nav .menuText {
+        display: none;
+    }
+    header .header nav, footer .footer nav {
+        grid-template-columns: 90px auto;
+    }
+}
