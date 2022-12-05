@@ -201,6 +201,10 @@ footer .footer nav .menuText {
     text-align: center;
     font-family: 'SF Pro Display', sans-serif;
 }
+nav .menuText > li a {
+    display: block;
+    height: 100%;
+}
 .banner {
     position: relative;
     display: flex;
@@ -389,11 +393,17 @@ footer .footer nav .menuText {
     justify-content: center;
     align-items: center;
 }
-.tableSection .tableBlock table tbody tr:first-of-type td {
-    border-radius: 15px 15px 0 0;
+.tableSection .tableBlock table tbody tr:first-of-type td:first-of-type {
+    border-radius: 15px 0 0 0;
 }
-.tableSection .tableBlock table tbody tr:last-of-type td {
-    border-radius: 0 0 15px 15px;
+.tableSection .tableBlock table tbody tr:first-of-type td:last-of-type {
+    border-radius: 0 15px 0 0;
+}
+.tableSection .tableBlock table tbody tr:last-of-type td:first-of-type {
+    border-radius: 0 0 0 15px;
+}
+.tableSection .tableBlock table tbody tr:last-of-type td:last-of-type {
+    border-radius: 0 0 15px 0;
 }
 .tableSection .tableBlock table tbody {
     display: flex;
@@ -434,6 +444,21 @@ nav .mobMenuBurger {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.offcanvas#mobMenu ul.topmenu li .nextOpen {
+    position: relative;
+    padding-right: 15px;
+}
+.offcanvas#mobMenu ul.topmenu li .nextOpen::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text);
+    transform: translateY(-50%);
 }
 .offcanvas#mobMenu ul.topmenu > li > .submenu {
     display: none;
