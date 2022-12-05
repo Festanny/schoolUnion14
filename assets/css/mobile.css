@@ -1,6 +1,6 @@
 @media screen and (min-width: 1921px) {
     :root {
-        --fz140: 7.29vw;
+        --fz120: 6.25vw;
         --fz80: 4.16vw;
         --fz70: 3.64vw;
         --fz30: 1.56vw;
@@ -65,9 +65,6 @@
         grid-template-columns: 1fr 5.93vw 1fr;
         gap: 2.34vw;
     }
-
-
-
     header .header nav .menuText,
     footer .footer nav .menuText {
         gap: 1.30vw;
@@ -137,15 +134,42 @@
     footer .footer {
         padding: 5.21vw 0;
     }
+
+    header .header nav .burger {
+        gap: 0.26vw;
+    }
+    header .header nav .burger > div {
+        width: 1.56vw;
+        height: 0.16vw;
+    }
+    .offcanvas#mobMenu ul.topmenu {
+        gap: 1.04vw;
+    }
+    .offcanvas#mobMenu ul.topmenu > li > .submenu {
+        border-right: 0.16vw solid rgba(0, 0, 0, 0.2);
+    }
+    .offcanvas#mobMenu ul.topmenu > li > .submenu > li > .submenu {
+        padding-right: 1.04vw;
+    }
+    .offcanvas#mobMenu ul.topmenu .submenu.open {
+        gap: 0.52vw;
+        margin: 1.04vw 0;
+        padding: 0.26vw 0.52vw 0 0;
+    }
+    .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
+        --bs-offcanvas-width: 20.82vw;
+        --bs-offcanvas-border-width: 0.05vw;
+      }
 }
 @media screen and (max-width: 1360px) {
     .container {
         width: 1000px;
     }
-    header .header nav .burger {
+    nav .mobMenuBurger {
         display: flex;
     }
-    header .header nav .menuText {
+    header .header nav .menuText,
+    footer .footer nav .menuText {
         display: none;
     }
     header .header nav, footer .footer nav {
