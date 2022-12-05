@@ -237,7 +237,7 @@ nav .menuText > li a {
 }
 .banner .bannerBlock .title {
     color: var(--blue-dark);
-    font-size: var(--fz120);
+    font-size: var(--fz120)!important;
     text-transform: uppercase;
     letter-spacing: -3px;
 }
@@ -249,7 +249,7 @@ nav .menuText > li a {
 }
 .news .newsBlock .info-block {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     gap: 85px;
 }
 .news .newsBlock .info-block .item.textBlock {
@@ -283,7 +283,7 @@ nav .menuText > li a {
     height: 100%;
     object-fit: contain;
 }
-.news .newsBlock .info-block .item.imgNews::before,
+/* .news .newsBlock .info-block .item.imgNews::before,
 .news .newsBlock .info-block .item.imgNews::after {
     content: '';
     position: absolute;
@@ -302,7 +302,7 @@ nav .menuText > li a {
 .news .newsBlock .info-block .item.imgNews::after {
     background-image: url('../img/other/8b45b13fca37f0a6eeba5441881b23f1.png');
     transform: translate(-50%, -50%);
-}
+} */
 .news .newsBlock .blockMore {
     display: flex;
     flex-direction: column;
@@ -619,3 +619,17 @@ nav .mobMenuBurger {
   .btn-close-white {
     filter: invert(1) grayscale(100%) brightness(200%);
   }
+
+body.letsee-active .banner::before {
+    display: none;
+}
+body.letsee-active .banner .bannerBlock {
+    margin-top: 0;
+    padding: 0;
+}
+body.letsee-active nav .burger > div {
+    background-color: var(--black)!important
+}
+body.letsee-active header {
+    top: 40px;
+}

@@ -18,4 +18,25 @@
     $('.offcanvas#mobMenu .topmenu li .nextOpen > a').on('click', function() {
         console.log($(this).parent('.nextOpen').next('.submenu').toggleClass('open'))
     })
+    $('.letsee-fontsize-small').on('click', function() {
+        const root = document.querySelector(':root');
+        const rootStyles = getComputedStyle(root);
+        let fz = rootStyles.getPropertyValue('--fz120')
+        fz = fz.slice(0, -2)
+        document.body.style.setProperty('--fz120', fz + 'px');
+    })
+    $('.letsee-fontsize-medium').on('click', function() {
+        const root = document.querySelector(':root');
+        const rootStyles = getComputedStyle(root);
+        let fz = rootStyles.getPropertyValue('--fz120')
+        fz = fz.slice(0, -2)
+        document.body.style.setProperty('--fz120', fz * 1.2 + 'px');
+    })
+    $('.letsee-fontsize-large').on('click', function() {
+        const root = document.querySelector(':root');
+        const rootStyles = getComputedStyle(root);
+        let fz = rootStyles.getPropertyValue('--fz120')
+        fz = fz.slice(0, -2)
+        document.body.style.setProperty('--fz120', fz * 1.4 + 'px');
+    })
 })(jQuery);
