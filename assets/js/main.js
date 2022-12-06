@@ -47,4 +47,12 @@
         fz = fz.slice(0, -2)
         document.body.style.setProperty('--fz120', fz * 1.4 + 'px');
     })
+    $('.banner .bannerBlock .btn').on('click', function() {
+        if ($('.letsee-colors-bonw').hasClass('letsee-colors-active') && $('body').hasClass('letsee-active')) {
+            $('header .header .logo img').attr('src', 'assets/img/other/logo2.svg')
+        } else {
+            $('header .header .logo img').attr('src', 'assets/img/other/logo.svg')
+        }
+    })
+    
 })(jQuery);
