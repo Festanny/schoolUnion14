@@ -26,6 +26,12 @@
     .btnTrp {
         border: 0.05vw solid var(--text);
     }
+    header.fixed_nav .header {
+        padding: 0.52vw 0;
+    }
+    header.fixed_nav .header .logo img {
+        height: 3.12vw;
+    }
     header {
         position: absolute;
         top: 0;
@@ -170,6 +176,10 @@
     }
     .container {
         width: 1000px;
+    }
+    header.fixed_nav .header .logo img {
+        height: 50px;
+        object-position: left;
     }
     nav .mobMenuBurger {
         display: flex;

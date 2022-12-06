@@ -2,6 +2,14 @@
     $(window).resize(function() {
         size()
     });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('header').height() * 2) {
+            $('header').addClass('fixed_nav');
+        }
+        else {
+            $('header').removeClass('fixed_nav');
+        }
+    })
     size()
     function size() {
         $('header .header nav .menuText .topmenuBig > .submenu .submenuP').width($('.container').width())
