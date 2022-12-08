@@ -197,6 +197,13 @@
     .banner .bannerBlock .desc {
         margin-top: -15px;
     }
+    footer nav .mobMenuBurger {
+        display: none;
+    }
+    footer .footer nav {
+        grid-template-columns: 90px;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 1070px) {
     :root {
@@ -371,14 +378,17 @@
     :root {
         --fz120: 50px;
     }
-    header .header nav, footer .footer nav {
+    header .header nav {
         grid-template-columns: 75px auto;
+    }
+    footer .footer nav {
+        grid-template-columns: 90px auto;
     }
     .banner {
         height: auto;
     }
     .banner .bannerBlock {
-        margin-top: 50px;
+        margin-top: 120px;
     }
     .gallery .galleryBlock .info-block {
         grid-template-columns: repeat(2, 1fr);
@@ -405,6 +415,12 @@
         --fz19: 15px;
         --fz16: 14px;
         --fz14: 13px;
+    }
+    .banner .bannerBlock .btnBlock {
+        width: 100%;
+    }
+    .banner .bannerBlock .btnBlock .btn {
+        width: 100%;
     }
     .news .newsBlock .info-block .item.imgNews {
         height: 200px;

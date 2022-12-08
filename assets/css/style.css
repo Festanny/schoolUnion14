@@ -55,7 +55,7 @@ textarea {
 }
 input:focus,
 textarea:focus {
-    border-color: var(--red);
+    outline: none;
 }
 .sfpro {
     font-family: 'SF Pro Display', sans-serif;
@@ -260,6 +260,29 @@ nav .menuText > li a {
     color: var(--white);
     margin-top: -20px;
     margin-bottom: 45px;
+}
+.banner .bannerBlock .btnBlock {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.banner .bannerBlock .btnBlock .btn {
+    text-align: center;
+}
+.banner .bannerBlock .btnBlock .search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.banner .bannerBlock .btnBlock .search input {
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 5px;
+}
+.banner .bannerBlock .btnBlock .search input::placeholder {
+    color: var(--white);
 }
 .news .newsBlock .info-block {
     display: grid;
